@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 //craeting an element
 //1st parameter is what is the element
 //2nd is objects or like id

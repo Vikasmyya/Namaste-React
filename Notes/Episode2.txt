@@ -1,0 +1,45 @@
+1. pakage.json is a configuration file for npm and aslo called dependency 
+2. need to do npm init
+3. need to install bundler like webpack, parcle and vite
+4. bundler will package ur app or bundler ur app to ship for the production
+
+5. we can install 2 types of packes we can install 1 is dev dependency another id normal dependency
+    dev is used in development and normal is used on production
+6. npm install -D parcel (to install parcel bundler development)
+7. in the package.json the caret(^) symbol will auto install the minor version of that dependency
+    and if you hav tilde(~) npm will install major version of that if relesed
+8. package-lock.json will keep track of exact version of the dependency that we instlled
+9. in lock.json the integrity has sha56 which will check what is the version of the package we are using in local
+    that matches with what we deployed in the prod
+
+10. node modeule is a like database where all the package/ dependency exists
+11. parecl having its own dependency know as trasitive dependency
+12. its important to put package and packagelock.json inn git it will have which dependenc and its version in it
+13. dont push the node module we can recreate it using package and packagelock(by npm install)
+
+14. npx is executing the package
+15. npx parcel index.html to run the application(exected the parcel)
+
+16. one way to inject react is cdn and other way is npm and cdn is not the prefered way because it will call the url and in the network tab u can see it
+17. using import we import the react and dependency in our app
+
+18. we need add modeule type in index.html file for app.js because browser cannot uderstand the normal js file having import and export
+
+19. parcel is doing
+    dev build
+    craeting local server
+    HMR = hot modeule replacement(when we do changes and save it will automaticall reflect in browser)
+    its using file watching algo built in c++
+    its also doing caching thats why when we save it will take less time to build
+    image opitmization
+    when prod build it will minification and bundling , compress the file 
+    consisting hashing
+    code splitting
+    differential bundling - to support older browser
+    diagnostics and error suggestion
+    tree shaking - remove unused code
+
+20. to prod build the application use npx parcel build index.json but in the package need to remove main because of the conflict
+    in the dist folder we have all the build files 
+
+21. to configure to work in diffrent browser and version we can configure it in packagejson by adding browserlist
