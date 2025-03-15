@@ -1,0 +1,7 @@
+1. when we create react element it will be in object
+2. when we try to render then it will be converted as html code that browser understand
+3. if the root element has already some elemnts then it will replace that one
+4. what ever other than root it will remain as it is
+
+5. we can nest the elemnts by passing it in the 3 parameter in react.createelemnt 
+
