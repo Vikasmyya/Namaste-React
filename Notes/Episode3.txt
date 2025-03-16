@@ -1,0 +1,22 @@
+1. to build starting our project, we need to include in the package jason script section(inductries statnderd) 
+    "start":"parcel index.html"
+    to run cmd: npm run start / npm start and npm build not work we need to give full command for prod
+
+2. JSX - javascripts syntax to build html element, jsx is diffrent and react diffrent
+    jsx id not html in javascripts, its a html like syntax
+    jsx (transpiled before it reaches js engine) - done by parcel - bable
+    jax element will converted to react.createelement 
+    in Html we use class as attribute but in jsx we use className an we use camel case in jsx
+    if jsx is in multiple line wrap it in paranthese ()
+
+3. React component
+    class bases components(old way) and function base components(new way)
+    when we trying to create a func component start with capital letter
+    is a normal javascripts function which returns some jsx / javascripts function which returns react elements
+    if you have multiple elements you need to wrap it around a element
+    like this is component composition 
+        <div>
+            <h1></h1>
+            <h2></h2>
+        </div>
+4. Inside jsx if you want to write javascripts code you can do that by inside the curly braces {}
